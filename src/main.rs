@@ -107,7 +107,7 @@ async fn init(_init: &Init) -> Result<(), Error> {
         file,
         &config::Config {
             concurrent: 10,
-            total: 100,
+            total: 1000,
             requests: vec![
                 RequestConfig {
                     url: String::from("http://localhost:8080"),
