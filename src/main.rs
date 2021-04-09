@@ -53,7 +53,7 @@ async fn main() {
 
     let result = match opts.subcmd {
         Some(SubCommand::Init(i)) => init(&i).await,
-        Some(SubCommand::Clear(i)) => clear().await,
+        Some(SubCommand::Clear(..)) => clear().await,
         None => run(&opts).await,
     };
 

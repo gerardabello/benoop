@@ -82,10 +82,8 @@ pub fn get_baseline() -> Result<Option<Results>, Error> {
 }
 
 pub fn remove_baseline() -> Result<(), Error> {
-    let mut file = fs::remove_file(BASELINE_SAVE_FILE).map_err(|e| Error::Io {
+    fs::remove_file(BASELINE_SAVE_FILE).map_err(|e| Error::Io {
         source: e,
         op: "remove-baseline",
-    })?;
-
-    Ok(())
+    })
 }
