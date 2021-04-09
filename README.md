@@ -5,6 +5,7 @@ Benoop is a benchmarking tool for HTTP servers. Similar to `ab` (Apache HTTP ser
 ## Install
 
 Install it with cargo: `cargo install benoop`
+
 Or get pre-build binaries from the latest [release](https://github.com/gerardabello/benoop/releases).
 
 ## Usage
